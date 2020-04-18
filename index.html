@@ -11,8 +11,29 @@
 </head>
 
 <body>
-	<div class="navigationBar">
-		<a href="list.html"><img class="navigationBarMenuButton" src="images/menu@3x.png"></a>
+	<div class="navigationBar" id="test1">
+		<a><img class="navigationBarMenuButton" src="images/menu@3x.png" onclick="toMenu()"></a>
+		<div class="contain3" id="home">
+			<ul>
+				<li><a href="#test1">首页</a></li>
+				<li><a href="#test2">产品优势</a></li>
+				<li><a href="#test3">签名对比</a></li>
+				<li><a href="#test4">合作流程</a></li>
+				<li><a href="#test5">视频演示</a></li>
+				<li><a href="#test6">常见问题</a></li>
+				<!-- <ul class="listText">首页</ul>
+				<div class="listSeparterLine">
+				<ul class="listText">产品优势</ul>
+				<div class="listSeparterLine">
+				<ul class="listText">签名对比</ul>
+				<div class="listSeparterLine">
+				<ul class="listText">合作流程</ul>
+				<div class="listSeparterLine">
+				<ul class="listText">视频演示</ul>
+				<div class="listSeparterLine">
+				<ul class="listText">常见问题</ul> -->
+			</ul>
+		</div>
 	    <img class="navigationBarCenterImage" src="images/icon_logo@3x.png">
 		<div class="loginButton">
 			登录
@@ -25,7 +46,7 @@
 		</div>
 	
 	<!-- 产品优势-->
-		<div class="product_all">
+		<div class="product_all" id="test2">
 			<h1 class="h1 animated fadeInLeft">产品优势</h1>
 			<div class="h3 animated fadeInLeft">PRODUCTS</div>
 			<div class="product_info animated rotateInDownLeft">
@@ -61,7 +82,7 @@
 	
 	
 	
-	<h1 class="stepMainTitle">签名对比</h1>
+	<h1 class="stepMainTitle" id="test3">签名对比</h1>
 	<div class="stepSubTitle">SIGNATURE COMPARISON</div>
 	<div class="sign-box-all">
 		<div class="sign-box-1">
@@ -115,7 +136,7 @@
 	
 	
 	<!-- 合作流程-->
-		<div class="product_all">
+		<div class="product_all" id="test4">
 			<div class="h1">合作流程</div>
 			<div class="h3">COOPERATION PROCESS</div>
 			<div class="product_info">
@@ -148,7 +169,7 @@
 		</div>
 		
 	</div>
-	<h1 class="stepMainTitle">视频演示</h1>
+	<h1 class="stepMainTitle" id="test5">视频演示</h1>
 	<div class="stepSubTitle">VIDEO</div>
 	<!-- <div class="videoImage-box">
 	</div> -->
@@ -164,7 +185,7 @@
 		<!-- <div class="banner"><img style="width: 100%; height: 51%width;" src="images/home/bg_video@3x.png"></div> -->
 	</div>
 	
-	<div class="APPStore-box">
+	<div class="APPStore-box" id="test6">
 		<div class="APPStore-Text">无需越狱，无需上架App Store</div>
 		<div class="APPStore-Text">安装即用，无需手动信任授权</div>
 		<div class="APPStore-Text">提供ipa安装包，一键立即开启，立即分发</div>
@@ -229,11 +250,25 @@
 		<!-- <div class="foot-center-copyright">Copyright © 2009-2018©平台, All Rights Reserved.</div>
 		<span class="line"></span> -->
     </div>
-    <div class="top" id="tops" onclick="toTop()">
-        <em></em>
+    <div class="top" id="tops">
+		<!-- <em></em> -->
+		<a href="#test1" style="display: block; width: 100%;height: 100%;"></a>
     </a>
 </body>
 <script>
+	var toMenu = function() {
+		var home = document.getElementById("home")
+		console.log(home.className)
+		let classes = home.className
+		let str = "fadeInLeft"
+		if (home.className.indexOf(str) != -1) {
+			// home.classList.add("fadeInRight")
+			home.classList.remove("fadeInLeft", "show")
+		} else {
+			home.classList.add("animated", "fadeInLeft", "show")
+		}
+		
+	}
 	var toTop = function(){
 		window.scrollTo(0, 200);
 	}
