@@ -266,12 +266,15 @@
 			home.classList.remove("fadeInLeft", "show")
 		} else {
 			home.classList.add("animated", "fadeInLeft", "show")
+			setTimeout(function(){
+				home.classList.remove("fadeInLeft", "show")
+			},2000)
 		}
 		
 	}
-	var toTop = function(){
-		window.scrollTo(0, 200);
-	}
+	// var toTop = function(){
+	// 	window.scrollTo(0, 200);
+	// }
     // var top = document.getElementById('#top');
 	// var top = document.getElementById('tops')
 	// top.addEventListener('click', function(){

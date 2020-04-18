@@ -143,7 +143,9 @@ html{
 }
 .info_img img{
 	margin: 0 auto;
-	width: 16%;
+	/* width: 16%; */
+	width: 6rem;
+	height: 6rem;
 }
 
 .info_arrow{
@@ -157,7 +159,9 @@ html{
  display: block;
  align-content: center;
  margin-top:1.875rem;
- width: 6%;
+ /* width: 6%; */
+ width: 2rem;
+ height: 2rem;
 }
 
 .info-t1{
@@ -334,7 +338,7 @@ html{
 /* 底部联系方式 */
 .footer {
 	margin-top: 32px;
-	padding:2rem 4rem 12rem;
+	padding:2rem 4rem 130px;
 	background-color: #0087FF;
 	display: flex;
 	flex-direction: column;
