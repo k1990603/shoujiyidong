@@ -1,0 +1,46 @@
+.navigationBar {
+	background-color: #0087FF;
+	height: 90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.navigationBarCloseButton {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+.navigationBarCenterImage {
+	width: 100px;
+	/* height: 40px; */
+}
+
+.searchBar {
+	background-color: #DCDCDC;
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.searchBarText {
+	padding-left: 74px;
+	color: white;
+}
+.searchBarIcon {
+	width: 22px;
+	height: 22px;
+	padding-right: 74px;
+}
+
+.listText {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #0087FF;
+}
+.listSeparterLine {
+	height: 1px; 
+	background-color: #C2C2C2; 
+	margin-left: 74; 
+	margin-right: 74;
+}

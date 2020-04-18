@@ -1,0 +1,372 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 62.5%;
+	-webkit-text-size-adjust:none;
+}
+/* 顶部导航 */
+.navigationBar {
+	background-color: #0087FF;
+	height: 90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.navigationBarMenuButton {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+.navigationBarCenterImage {
+	width: 100px;
+	/* height: 40px; */
+}
+
+/* 登录按钮 */
+.loginButton {
+	height: 32px;
+	width: 92px;
+	border: 1px solid #000;
+	border-radius: 2px;
+	border-width: 1px;
+	border-color: white;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+}
+
+
+/* 流程步骤文案样式 */
+.stepMainTitle {
+	color: #333333;
+	/* font-size: .22rem; */
+	display: flex;
+	justify-content: center;
+}
+.stepSubTitle {
+	color: #333333;
+	font-size: 1.14rem;
+	display: flex;
+	justify-content: center;
+}
+
+
+.logo.a.img{
+	float: left;
+	width: 2rem;
+	height: 2rem;
+}
+.login{
+	float: right;
+	display: block;
+	width: 5.75rem;
+	height: 2rem;
+	color: #FFFFFF;
+	border: #FFFFFF 0.0625rem;
+	text-align: center;
+	line-height: 2rem;
+	margin-right: 1.25rem;
+	padding: 0.375rem 0.625rem 0.375rem 0.625rem;
+	
+}
+.product_all{
+	width: 100%;
+	background-color: #FAFAFA;
+	padding-bottom: 1.75rem;
+}
+.h1{
+	/* font-size:1.375rem; */
+	font-size:1.775rem;
+	color: #333333;
+	margin: 0 auto;
+	padding-top: 0.75rem;
+	text-align: center;
+	margin-top: 30px;
+}
+.h3{
+	font-size:0.875rem;
+	color: #333333;
+	margin: 0 auto;
+	margin-top: 0.375rem;
+	text-align: center;
+}
+.product_info{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding:1.75rem;
+	margin-top:1.25rem;
+	box-sizing: border-box;
+}
+.info_01{
+	padding-bottom: 2.375rem;
+}
+.info_img{
+	margin:0 auto;
+	/* display: block;
+	align-content: center; */
+	display: flex;
+	justify-content: center;
+	padding: 0.625rem 0 0.625rem 0;
+}
+.info_img img{
+	margin: 0 auto;
+	width: 16%;
+}
+
+.info_arrow{
+	margin:0 auto;
+	display: block;
+	align-content: center;
+	margin-top:1.875rem;
+}
+.info_arrow img{
+ margin:0 auto;
+ display: block;
+ align-content: center;
+ margin-top:1.875rem;
+ width: 6%;
+}
+
+.info-t1{
+	font-size:1.25rem;
+	color: #4D4D4D;
+	margin: 0 auto;
+	margin-top: 0.375rem;
+	text-align: center;
+}
+
+.info-t2{
+	font-size:1rem;
+	color: #808080;
+	margin: 0 auto;
+	margin-top:0.1875rem;
+	text-align: center;
+}
+
+
+/* 签名对比 */
+.sign-box-all {
+	/* height: 390px; */
+	height: 260px;
+	margin-left: .73rem;
+	margin-right: .73rem;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.sign-box-1 {
+	flex: 1;
+	height: 100%;
+	box-shadow: 0 4px 7px 0 rgba(0,0,0,.3);
+	margin-right: 2rem;
+	/* background-color: #008000; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* display: block; */
+}
+.sign-box-2 {
+	flex: 1;
+	height: 100%;
+	box-shadow: 0 4px 7px 0 rgba(0,0,0,.3);
+	margin-left: 2rem;
+	margin-left: .24rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.sign-box-header {
+	/* background-image: linear-gradient(90deg, #0087FF 0%, #005EDB 100%); */
+	background-image: url(../images/home/bowen.png);
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+	color: white;
+	/* height: 78px; */
+	height: 48px;
+	width: 100%;
+	font-size: 1.22rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sign-box-content {
+	background-color: white;
+	/* height: 312px; */
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.sign-row-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.sign-row-image {
+	width: 15px;
+	height: 15px;
+}
+.sign-row-text {
+	font-family: PingFangSC-Regular;
+	font-size: 1.1691rem;
+	color: #808080;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 4px;
+}
+
+
+/* 视频演示 */
+.videoImage-box {
+	height: 421px;
+	margin-top: 25px;
+	background-image: url(../images/home/bg_video@3x.png);
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+}
+/* .videoImage {
+	height: 421px;
+	margin-top: 25px;
+} */
+
+
+/* APP Store */
+.APPStore-box {
+	height: 137px;
+	margin-left: 73px;
+	margin-right: 73px;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url(../images/home/app.jpg);
+	background-size: 100% 100%; 
+	background-repeat: no-repeat; 
+}
+.APPStore-Text {
+	color: white;
+	font-size: 1.15rem;
+}
+
+/* Q&A */
+.QA-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	box-shadow: 0 4px 7px 0 rgba(0,0,0,.3);
+	margin-left: 73px;
+	margin-right: 73px;
+	margin-top: 23px;
+}
+.QA-box-header {
+	background-image: linear-gradient(90deg, #0087FF 0%, #005EDB 100%);
+	color: white;
+	height: 78px;
+	width: 100%;
+	font-size: 1.23rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.QA-box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 1.75rem;
+	box-sizing: border-box;
+}
+.QA-Q {
+	color: #0087FF;
+	font-size: 1.18rem;
+	margin-left: .34rem;
+	margin-right: .34rem;
+	margin-top: 14px;
+}
+.QA-A {
+	color: #808080;
+	font-size: 1.17rem;
+	margin-left: .34rem;
+	margin-right: .34rem;
+}
+
+
+/* 底部联系方式 */
+.footer {
+	margin-top: 32px;
+	padding:2rem 4rem;
+	background-color: #0087FF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.foot-contactus-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 14px;
+}
+.foot-contactus-big {
+	color: white;
+	font-size: 1.33rem;
+	font-weight: 900;
+}
+.foot-contactus-small {
+	color: white;
+	font-size: 1.14rem;
+}
+.foot-contacttype-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: .6rem 0;
+	text-align: center;
+}
+.foot-contacttext1 {
+	flex: 1;
+	/* background-color: red; */
+	color: white;
+	/* margin-left: 117px; */
+	margin-left: 1.17rem;
+	font-size: 1.17rem;
+}
+.foot-contacttext2 {
+	flex: 1;
+	/* background-color: green; */
+	color: white;
+	/* margin-left: 117px; */
+	margin-left: 1.17rem;
+	font-size: 1.17rem;
+}
+.foot-center-copyright {
+	display: flex;
+	align-self: center;
+	color: white;
+	font-size: 1.12rem;
+	margin: .7rem 0 2rem 0;
+}
+
+#tops{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/top.png);
+	background-size: cover;
+}
