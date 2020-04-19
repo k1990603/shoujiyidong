@@ -346,7 +346,7 @@ html{
 /* 底部联系方式 */
 .footer {
 	margin-top: 32px;
-	padding:2rem 1rem 130px;
+	padding:2rem 5% 130px;
 	background-color: #0087FF;
 	display: flex;
 	flex-direction: column;
