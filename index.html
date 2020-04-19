@@ -34,10 +34,12 @@
 				<ul class="listText">常见问题</ul> -->
 			</ul>
 		</div>
-	    <img class="navigationBarCenterImage" src="images/icon_logo@3x.png">
-		<div class="loginButton">
+		<img class="navigationBarCenterImage" src="images/icon_logo@3x.png">
+		<a class="loginButton" href="https://www.996apk.com/login">登录</a>
+		<!-- <div class="loginButton">
+			<a href="https://www.996apk.com/login"></a>
 			登录
-		</div>
+		</div> -->
 	</div>
 	
 	<!-- banner-->
@@ -163,7 +165,7 @@
 				<div class="info_01">
 				  <div class="info_img"><img src="images/c0-05.png"></div>
 				  <div class="info-t2"><p>分发专属链接</p><p>持续稳定服务</p></div>
-				  <div class="info_arrow"><img src="images/箭头@3x.png"></div>
+				  <!-- <div class="info_arrow"><img src="images/箭头@3x.png"></div> -->
 				</div>
 			</div>
 		</div>
@@ -174,14 +176,17 @@
 	<!-- <div class="videoImage-box">
 	</div> -->
 	<div class="banner_all">
-		<video style="width: 100%; height: 51%width;object-fit:fill" loop poster="images/home/bg_video@3x.png"
-		muted="muted"
-		autoplay="true"
-		preload="auto" >
+		<video style="width: 100%; height: 260px;" autoplay id="vd" poster="images/home/bg_video@3x.png" controls >
+		 <!-- ontimeupdate="pl()" -->
+		 <!-- preload="auto" -->
+		<!-- loop -->
+		<!-- autoplay="true" -->
+		<!-- ;object-fit:fill -->
 			<source src="video/IMG_3652.mp4" type="video/mp4">
 			<!-- <source src="movie.ogg" type="video/ogg"> -->
 			您的浏览器不支持 video 标签。
 		</video>
+		<!-- <button onclick="pl()">播放</button> -->
 		<!-- <div class="banner"><img style="width: 100%; height: 51%width;" src="images/home/bg_video@3x.png"></div> -->
 	</div>
 	
@@ -272,6 +277,13 @@
 		}
 		
 	}
+	// function pl() {
+	// 	if(vd.paused) {
+	// 		vd.play()
+	// 	} else if(vd.play){
+	// 		vd.pause()
+	// 	}
+	// }
 	// var toTop = function(){
 	// 	window.scrollTo(0, 200);
 	// }
