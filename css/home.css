@@ -127,7 +127,7 @@ html{
 	width: 90%;
 	margin: 0 auto;
 	background-color: #FFFFFF;
-	padding:1.75rem;
+	padding:1.75rem 4rem;
 	margin-top:1.25rem;
 	box-sizing: border-box;
 }
@@ -162,7 +162,7 @@ html{
  margin-top:1.875rem;
  /* width: 6%; */
  width: 2rem;
- height: 2rem;
+ height: 1.2rem;
 }
 
 .info-t1{
@@ -345,7 +345,7 @@ html{
 /* 底部联系方式 */
 .footer {
 	margin-top: 32px;
-	padding:2rem 4rem 130px;
+	padding:2rem 1rem 130px;
 	background-color: #0087FF;
 	display: flex;
 	flex-direction: column;
@@ -373,7 +373,7 @@ html{
 	justify-content: space-between;
 	align-items: center;
 	margin: .6rem 0;
-	text-align: center;
+	/* text-align: center; */
 }
 .foot-contacttext1 {
 	flex: 1;
@@ -384,7 +384,7 @@ html{
 	font-size: 1.17rem;
 }
 .foot-contacttext2 {
-	flex: 1;
+	/* flex: 1; */
 	/* background-color: green; */
 	color: white;
 	/* margin-left: 117px; */
