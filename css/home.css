@@ -6,6 +6,9 @@ html{
 	font-size: 62.5%;
 	-webkit-text-size-adjust:none;
 }
+body {
+	background-color: #FAFAFA;
+}
 /* 顶部导航 */
 .navigationBar {
 	background-color: #0087FF;
@@ -115,6 +118,7 @@ html{
 	padding-top: 0.75rem;
 	text-align: center;
 	margin-top: 30px;
+	margin-top: 7px;
 }
 .h3{
 	font-size:0.875rem;
