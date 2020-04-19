@@ -49,7 +49,8 @@ body {
 	color: #666;
 }
 .contain3 ul li a{
-	color: #333;
+	/* color: #333; */
+	color: #0087FF;
 	text-decoration: none;
 }
 .listText {
@@ -356,7 +357,7 @@ body {
 /* 底部联系方式 */
 .footer {
 	margin-top: 32px;
-	padding:2rem 5% 130px;
+	padding:2rem 5% 0;
 	background-color: #0087FF;
 	display: flex;
 	flex-direction: column;
