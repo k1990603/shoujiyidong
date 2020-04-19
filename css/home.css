@@ -253,7 +253,7 @@ html{
 .sign-row-text {
 	font-family: PingFangSC-Regular;
 	font-size: 1.1691rem;
-	font-size: .4rem;
+	/* font-size: .4rem; */
 	color: #808080;
 	display: flex;
 	justify-content: center;
