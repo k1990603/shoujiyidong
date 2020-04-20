@@ -181,8 +181,8 @@
 	<div class="h3">VIDEO</div>
 	<!-- <div class="videoImage-box">
 	</div> -->
-	<div class="banner_all">
-		<video style="width: 100%; height: 260px;" autoplay id="vd" poster="images/home/8787.png" controls>
+	<div class="banner_all" onclick="pl()">
+		<video style="width: 100%; height: 260px;" autoplay id="vd" poster="images/home/8787.png">
 		 <!-- ontimeupdate="pl()" -->
 		 <!-- preload="auto" -->
 		<!-- loop -->
@@ -291,13 +291,13 @@
 
 	// var video = document.getElementById('video')
 
-	// function pl() {
-	// 	if(vd.paused) {
-	// 		vd.play()
-	// 	} else if(vd.play){
-	// 		vd.pause()
-	// 	}
-	// }
+	function pl() {
+		if(vd.paused) {
+			vd.play()
+		} else if(vd.play){
+			vd.pause()
+		}
+	}
 	// var toTop = function(){
 	// 	window.scrollTo(0, 200);
 	// }
