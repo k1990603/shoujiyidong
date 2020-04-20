@@ -188,7 +188,9 @@ body {
 }
 
 .info-t2{
-	font-size:1rem;
+	/* font-size:1rem; */
+	font-size:1.25rem;
+	font-weight: bold;
 	color: #808080;
 	margin: 0 auto;
 	margin-top:0.1875rem;
