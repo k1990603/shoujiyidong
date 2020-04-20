@@ -179,7 +179,7 @@ body {
 }
 
 .info-t1{
-	font-size:1.25rem;
+	font-size:1.35rem;
 	font-weight: bold;
 	color: #4D4D4D;
 	margin: 0 auto;
@@ -188,8 +188,8 @@ body {
 }
 
 .info-t2{
-	/* font-size:1rem; */
-	font-size:1.25rem;
+	font-size:1rem;
+	/* font-size:1.25rem; */
 	font-weight: bold;
 	color: #808080;
 	margin: 0 auto;
@@ -197,6 +197,9 @@ body {
 	text-align: center;
 }
 
+.info-t3 {
+	font-size: 1.35rem;
+}
 
 /* 签名对比 */
 .sign-box-all {
