@@ -44,7 +44,7 @@
 	
 	<!-- banner-->
 		<div class="banner_all">
-			<div class="banner"><img style="width: 100%; height: 51%width;" src="images/banner.jpg"></div>
+			<div class="banner"><img style="width: 100%; height: 51%width;" onclick="toLogin()" src="images/banner.jpg"></div>
 		</div>
 	
 	<!-- 产品优势-->
@@ -182,7 +182,7 @@
 	<!-- <div class="videoImage-box">
 	</div> -->
 	<div class="banner_all" onclick="pl()">
-		<video style="width: 100%; height: 260px;" autoplay id="vd" poster="images/home/8787.png">
+		<video style="width: 100%; height: 260px;" id="vd" poster="images/home/8787.png">
 		 <!-- ontimeupdate="pl()" -->
 		 <!-- preload="auto" -->
 		<!-- loop -->
@@ -207,8 +207,7 @@
 		<div class="QA-box-header">Q&A</div>
 		<div class="QA-box-content">
 			<div class="QA-Q">Q：超级签名稳定性如何？</div>
-			<div class="QA-A">A：超级签名掉签几率低，稳定性远远高于企业版分发模式，就算掉签也
-只会部分设备受影响，并不会所有设备一起掉签。</div>
+			<div class="QA-A">A：超级签名掉签几率低，稳定性远远高于企业版分发模式，就算掉签也只会部分设备受影响，并不会所有设备一起掉签。</div>
 		</div>
 		<div class="QA-box-content">
 			<div class="QA-Q">Q：超级签名的APP有下载限制吗？</div>
@@ -220,13 +219,11 @@
 		</div>
 		<div class="QA-box-content">
 			<div class="QA-Q">Q：签名需要多长时间？</div>
-			<div class="QA-A">A：下单后，我们的系统会自动开始签名流程，一般来说 10 分钟内签名
-好，如其他特殊情况，客服会告知您完成时间。</div>
+			<div class="QA-A">A：下单后，我们的系统会自动开始签名流程，一般来说 10 分钟内签名好，如其他特殊情况，客服会告知您完成时间。</div>
 		</div>
 		<div class="QA-box-content">
 			<div class="QA-Q">Q：超级签名的APP可以在App Store搜索到吗？</div>
-			<div class="QA-A">A：不能，签名后的APP是直接将链接、二维码发给用户直接安装，无需
-越狱，无需苹果账号，无需苹果审核，方便快捷。</div>
+			<div class="QA-A">A：不能，签名后的APP是直接将链接、二维码发给用户直接安装，无需越狱，无需苹果账号，无需苹果审核，方便快捷。</div>
 		</div>
 		<span style="margin-bottom: 32px;" />
 	</div>
@@ -297,6 +294,9 @@
 		} else if(vd.play){
 			vd.pause()
 		}
+	}
+	function toLogin() {
+		window.location.href="https://www.996apk.com/login"
 	}
 	// var toTop = function(){
 	// 	window.scrollTo(0, 200);
