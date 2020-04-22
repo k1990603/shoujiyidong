@@ -395,7 +395,7 @@ body {
 	margin: .6rem 0;
 	/* text-align: center; */
 }
-.foot-contacttext1 {
+.foot-contacttext1 a {
 	flex: 1;
 	flex-grow:10;
 	/* flex:0 1 auto; */
@@ -404,8 +404,9 @@ body {
 	/* margin-left: 117px; */
 	/* margin-left: 1.17rem; */
 	font-size: 1.17rem;
+	text-decoration: none;
 }
-.foot-contacttext2 {
+.foot-contacttext2 a {
 	flex: 1;
 	flex-grow:9;
 	/* background-color: green; */
@@ -413,6 +414,7 @@ body {
 	/* margin-left: 117px; */
 	margin-left: 0.17rem;
 	font-size: 1.17rem;
+	text-decoration: none;
 }
 .foot-center-copyright {
 	display: flex;
