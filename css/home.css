@@ -9,6 +9,13 @@ html{
 body {
 	background-color: #FAFAFA;
 }
+.m_imgBox{
+	display: block;
+	width: 100%;
+}
+/* .carousel-indicators{
+	background: #ccc;
+} */
 /* 顶部导航 */
 .navigationBar {
 	background-color: #0087FF;
@@ -433,26 +440,131 @@ body {
 	background-image: url(../images/top.png);
 	background-size: cover;
 } */
-.contact {
+.top{
 	position: fixed;
-	  right: 30px;
-	top: 30%;
+	right: 30px;
+	bottom: 30px;
 	width: 30px;
-  }
-  
-  .top{
-	  position: fixed;
-	  right: 30px;
-	  bottom: 30px;
-	  /* width: 30px; */
-	  /* height: 30px; */
-	  /* background-image: url(../images/top.png); */
-	  /* background-size: cover; */
+	height: 30px;
+}
+.lefts {
+  /* right: 50px; */
+  top: 40%;
+  z-index: 100;
+}
+.contact {
+  /* right: 50px; */
+  top: 40%;
+  opacity: 0;
   }
   
   .top a img{
 	display: block;
 	width: 40px;
 	height: 40px;
-	margin-top: 50px;
+	/* margin-top: 50px; */
+  }
+
+  .run-ball-1.run-up {
+	/* animation: up1 0.2s ease-in-out; */
+	animation: up1 0.2s cubic-bezier(.89, .2, .34, .75);
+	animation-fill-mode: forwards;
+  }
+  
+  .run-ball-2.run-up {
+	/* animation: up2 0.2s ease-in-out; */
+	animation: up2 0.2s cubic-bezier(.89, .2, .34, .75);
+	animation-fill-mode: forwards;
+  }
+  
+  .run-ball-3.run-up {
+	animation: up3 0.2s cubic-bezier(.89, .2, .34, .75);
+	animation-fill-mode: forwards;
+  }
+  
+  .run-ball-1.run-down {
+	animation: down1 0.2s cubic-bezier(.89, .2, .34, .75);
+	animation-fill-mode: forwards;
+  }
+  
+  .run-ball-2.run-down {
+	animation: down2 0.2s cubic-bezier(.89, .2, .34, .75);
+	animation-fill-mode: forwards;
+  }
+  
+  .run-ball-3.run-down {
+	animation: down3 0.2s cubic-bezier(.89, .2, .34, .75);
+	animation-fill-mode: forwards;
+  }
+
+  @keyframes up1 {
+	from {
+	  transform: translateY(0);
+	  opacity: 0;
+	}
+  
+	to {
+	  transform: translateY(279px);
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes down1 {
+	from {
+	  transform: translateY(279px);
+		opacity: 1;
+	}
+  
+	to {
+	  transform: translateY(0);
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes up2 {
+	from {
+	  transform: translateY(0);
+	  opacity: 0;
+	}
+  
+	to {
+	  transform: translateY(183px);
+		opacity: 1;
+	}
+  }
+  
+  @keyframes down2 {
+	from {
+	  transform: translateY(183px);
+		opacity: 1;
+	}
+  
+	to {
+	  transform: translateY(0);
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes up3 {
+	from {
+	  transform: translateY(0);
+	  opacity: 0;
+	}
+  
+	to {
+	  transform: translateY(92.4px);
+		opacity: 1;
+	}
+  }
+  
+  @keyframes down3 {
+	from {
+	  transform: translateY(92.4px);
+		opacity: 1;
+	}
+  
+	to {
+	  transform: translateY(0);
+	  opacity: 0;
+	}
   }

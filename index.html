@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta charset="utf-8">
-    <title>解决方案</title>
+	<title>解决方案</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/home.css?v=2">
     <link rel="stylesheet" href="css/animate.css">
 </head>
@@ -44,7 +45,36 @@
 	
 	<!-- banner-->
 		<div class="banner_all">
-			<div class="banner"><img style="width: 100%; height: 51%width;" onclick="toLogin()" src="images/banner.jpg"></div>
+			<!-- <div class="banner"> -->
+				<!-- <img style="width: 100%; height: 51%width;" onclick="toLogin()" src="images/banner.jpg"> -->
+			<!-- </div> -->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- 指示器 -->
+				<ol class="carousel-indicators">
+				  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<!-- 轮播图片及说明文字 -->
+				<div class="carousel-inner" role="listbox">
+				  <div class="item active">
+					<a href="https://www.996apk.com/login" class="pc_imgBox"><img src="images/banner1.png" alt=""></a>
+				  </div>
+				  <div class="item">
+					<a href="https://www.996apk.com/login" class="m_imgBox"><img src="images/banner2.png" alt=""></a>
+				  </div>
+				  <div class="item">
+					<a href="https://www.996apk.com/login" class="m_imgBox"><img src="images/banner3.png" alt=""></a>
+				  </div>
+				</div>
+				<!-- 控制按钮：左右切换 -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			  </div>
 		</div>
 	
 	<!-- 产品优势-->
@@ -263,11 +293,14 @@
 		<div class="foot-center-copyright">Copyright © 2019-2020©平台, All Rights Reserved.</div>
 		<span class="line"></span>
 	</div>
-	<div class="top contact">
-		<a class="text-white navBtn" target="_blank" href="https://wa.me/17866648882"><img src="./images/phone.png" alt=""></a>
-			<a class="text-white navBtn" target="_blank" href="https://t.me/chaoqian99"><img src="./images/tel.png" alt=""></a>
-			<a class="text-white navBtn" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=123456789&site=qq&menu=yes"><img src="./images/qq.png" alt=""></a>
-	  </div>
+	<div class="top lefts" onclick="turn()">
+		<a class="text-white navBtn" href="javascript:;"><img src="./images/_download2.png" alt=""></a>
+	</div>
+	<div class="top contact run-ball-1"><a class="text-white navBtn" target="_blank" href="https://wa.me/17866648882"><img src="./images/phone.png" alt=""></a></div>
+	<div class="top contact run-ball-2"><a class="text-white navBtn" target="_blank" href="https://t.me/chaoqian99"><img src="./images/tel.png" alt=""></a></div>
+	<div class="top contact run-ball-3"><a class="text-white navBtn" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=123456789&site=qq&menu=yes"><img src="./images/qq.png" alt=""></a></div>
+	<!-- <div class="top contact">
+	</div> -->
     <div class="top" id="tops">
 		<!-- <em></em> -->
 		<a href="#test1" style="display: block; width: 100%;height: 100%;">
@@ -275,6 +308,8 @@
 		</a>
     </a>
 </body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
 	var toMenu = function() {
 		var home = document.getElementById("home")
@@ -304,6 +339,19 @@
 	}
 	function toLogin() {
 		window.location.href="https://www.996apk.com/login"
+	}
+	function turn() {
+		if($(".run-ball-1").hasClass("run-up")){
+			$(".lefts img").attr("src","./images/_download2.png")
+			$(".run-ball-1").addClass("run-down").removeClass("run-up")
+			$(".run-ball-2").addClass("run-down").removeClass("run-up")
+			$(".run-ball-3").addClass("run-down").removeClass("run-up")
+		}else {
+			$(".lefts img").attr("src","./images/up.png")
+			$(".run-ball-1").addClass("run-up").removeClass("run-down")
+			$(".run-ball-2").addClass("run-up").removeClass("run-down")
+			$(".run-ball-3").addClass("run-up").removeClass("run-down")
+		}
 	}
 	// var toTop = function(){
 	// 	window.scrollTo(0, 200);
