@@ -12,6 +12,11 @@ body {
 .m_imgBox{
 	display: block;
 	width: 100%;
+	
+}
+.m_imgBox img{
+	height: 580px;
+	/* height: 100%; */
 }
 /* .carousel-indicators{
 	background: #ccc;
