@@ -31,6 +31,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
+	z-index: 1000000;
 }
 .navigationBarMenuButton {
 	width: 20px;
@@ -47,7 +48,11 @@ body {
 	top: 45px;
 	left: 20px;
 	opacity: 0;
+	/* z-index: 100000000000000000; */
 }
+/* .carousel-inner{
+	z-index: 100;
+} */
 .show {
 	opacity: 1;
 }
